@@ -63,6 +63,9 @@ const usersPatch = (req, res = response) => {
 const usersDelete = async (req, res = response) => {
     const {id} = req.params
 
+    //Obtener un elemento de la req que se guarda desde el middleware de validar jwt
+    // const uid = req.uid
+
     //Borrado fisicamente
     // const usuario = await User.findByIdAndDelete(id)
 
